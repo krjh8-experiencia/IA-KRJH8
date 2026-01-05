@@ -1,4 +1,4 @@
-const GROK_API_KEY = "PON_AQUI_TU_API_KEY"; // 🔥 INSEGURO 🔥
+const GROK_API_KEY = "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";
 
 let chats = JSON.parse(localStorage.getItem("chats")) || {};
 let currentChat = null;
@@ -69,7 +69,7 @@ async function sendMessage() {
     const data = await res.json();
     const reply = data.choices?.[0]?.message?.content || "Sin respuesta";
 
-    chats[currentChat].messages.pop(); // quita "Pensando..."
+    chats[currentChat].messages.pop();
     chats[currentChat].messages.push({ role: "ai", content: reply });
 
     openChat(currentChat);
