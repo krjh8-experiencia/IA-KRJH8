@@ -54,7 +54,7 @@ async function sendMessage() {
   addMessage("ai", "Pensando...");
 
   try {
-    const res = await fetch("https://api.x.ai/v1/chat/completions", {
+    const res = await fetch("http://localhost:3000/chat", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${GROK_API_KEY}`,
