@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const app = express();
 app.use(express.json());
 
-const GROK_API_KEY = "TU_API_KEY"; // sí, quemada
+const GROK_API_KEY = "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"; // sí, quemada
 
 app.post("/chat", async (req, res) => {
   try {
