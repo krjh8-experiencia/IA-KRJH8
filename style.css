@@ -56,3 +56,17 @@ body {
   flex: 1;
   padding: 10px;
 }
+
+.msg {
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.msg.user {
+  text-align: right;
+}
+
+.msg.ai {
+  text-align: left;
+  opacity: 0.9;
+}
